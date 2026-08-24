@@ -11,9 +11,15 @@ npm run dev
 
 ## GitHub Pages
 
-项目已包含自动部署流程。推送到 `main` 分支后，在仓库的 **Settings → Pages → Source** 中选择 **GitHub Actions**，网站会自动构建并发布。普通仓库与 `<用户名>.github.io` 仓库的路径均会自动适配。
+项目包含 GitHub Pages 自动发布流程。推送到 `main` 分支后：
 
-## 内容位置
+1. 打开仓库的 **Settings → Pages**。
+2. 在 **Build and deployment → Source** 中选择 **GitHub Actions**。
+3. 打开 **Actions** 页面，运行 **Deploy to GitHub Pages**，或再次推送一次更新。
+
+后续每次更新 `main` 分支，网站都会自动重新发布。
+
+## 主要内容
 
 - 页面内容：`app/page.tsx`
 - 全站样式：`app/globals.css`
